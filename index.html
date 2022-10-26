@@ -1,30 +1,140 @@
 <!DOCTYPE html> 
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Solução de mapeamento de dados da sua empresa para adequação à LGPD"
-    <title>DataAlphaSecurity</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solução de mapeamento de dados da sua empresa para adequação à LGPD">
+  <title>DataAlphaSecurity</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="dataalpha1.svg">
-        <nav>
-            <a>Home</a>
-            <a>Serviços e Produtos</a>
-            <a>Dúvidas</a>
-            <a>Contratar</a>
-            <a>Login</a>
-        </nav> 
-
-    </header>
+  <header class="header-page">
+    <div class="logo-container">
+			<img class="logo" src="dataalpha.svg">
+			<span>Data Alpha Security</span>
+		</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Serviços</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contato</a>
+    </nav> 
+  </header>
 
     <main>
-
+			<section id="home">
+				<article class="home">
+					<h2>Conte conosco para facilitar a adequação da sua empresa à LGPD.</h2>
+					<img class="hero" src="lgpd.jpg" alt="Pessoas trabalhando com o vários gráficos ao redor">
+				</article>
+			</section>
+			<section id="services">
+				<article class="services">
+					<div class="services-container">
+						<h3>Escolha o serviço ideal para sua empresa</h3>
+						<p>
+						Nós da Data Alpha Security, temos o objetivo de usar a tecnologia, inovação e a LGPD nos ativos de informações da sua empresa para que sejam devidamente organizados, 
+                        classificados e protegidos. Somos uma empresa capacitada com profissionais especializados em tratamentos de dados, tanto na parte júridica como tecnológica.
+                        É por isso que muitas organizações cometem erros ao 
+                        encarregar profissionais não preparados, ou de outra área, para atuar nessa função. 
+                        Além de ser inadequado, pode ser considerado acúmulo ou desvio de função,
+                        trazendo mais prejuízos à empresa. 
+						</p>
+					</div>
+					<div class="card-container">
+						<div class="card">
+							<h4>Básico</h4>
+							<p class="price">R$ 299,00 <span>/mês</span></p>
+							<ul>
+								<li> <span class="check">&#10003;</span>Licenciamento Digital</li>
+								<li> <span class="check">&#10003;</span>Diagnostico preliminar</li>
+								<li> <span class="check">&#10003;</span>Data Mapping</li>
+								<li> <span class="check">&#10003;</span>Relatorio Personalizado</li>
+								<li> <span class="check">&#10003;</span>Mentoria</li>
+							</ul>
+							<button class="join-button" type="button">
+								Assinar
+							</button>
+						</div>
+						<div class="card">
+							<h4>Premium</h4>
+							<p class="price">R$ 499,00 <span>/mês</span></p>
+							<ul>
+								<li> <span class="check">&#10003;</span>Plano Básico</li>
+								<li> <span class="check">&#10003;</span>Diagnostigo Final</li>
+								<li> <span class="check">&#10003;</span>Modelo de Política de Dados</li>
+								<li><span class="check">&#10003;</span> Consultorias Jurídicas</li>
+							</ul>
+							<button class="join-button" type="button">
+								Assinar
+							</button>
+						</div>
+					</div>
+				</article>
+			</section>
+			<section id="faq">
+				<h3>Perguntas Frequentes</h3>
+				<article class="faq">
+					<div class="accordion-item">
+						<h5 class="accordion-header" id="heading2">
+							<button class="accordion-button collapse" type="button" >
+								<span>O que é um Data Mapping ?</span>
+								<span class="plus">&plus;</span>
+							</button>
+						</h5>
+						<div id="collapse2" class="accordion-collapse collapse show">
+							<div class="accordion-body">
+								<p>
+                                    No Brasil, para atender aos requisitos de adequação à LGPD é imprescindível 
+                                    realizar o mapeamento de dados, uma vez que é este documento que dará um 
+                                    panorama geral de como a empresa está lidando com a questão da privacidade e
+                                     segurança da informação.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header" id="heading3">
+							<button class="accordion-button" type="button" >
+								<span>O que é a Lei geral de proteção de dados?</span>
+								<span class="plus">&plus;</span>
+							</button>
+						</h5>
+						<div id="collapse3" class="accordion-collapse collapse show">
+							<div class="accordion-body">
+								<p>
+									A Lei Geral de Proteção de Dados (LGPD) estabelece a forma como as empresas devem tratar os dados pessoais que estiverem em sua posse, na tentativa de protegê-los contra vazamentos e uso indevido.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header" id="heading4">
+							<button class="accordion-button" type="button" >
+								<span>O que são dados pessoais?</span>
+								<span class="plus">&plus;</span>
+							</button>
+						</h5>
+						<div id="collapse4" class="accordion-collapse collapse show">
+							<div class="accordion-body">
+								<p>
+									
+									Se uma informação permite identificar, direta ou indiretamente, um indivíduo que esteja vivo, então ela é considerada um dado pessoal: nome, RG, CPF, gênero, data e local de nascimento, telefone, endereço residencial, localização via GPS, retrato em fotografia, prontuário de saúde, cartão bancário, renda, histórico de pagamentos, hábitos de consumo, preferências de lazer; endereço de IP (Protocolo da Internet) e cookies, entre outros.
+								</p>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<section id="contact"></section>
     </main>
 
     <footer>
-
+			<div class="logo-container">
+				<img class="logo" src="dataalpha.svg" alt="DataAlphaSecurity">
+				<span>Data Alpha Security</span>
+			</div>
+			<p>Todos os direitos reservados a Data Alpha Security &#8482 2022</p>
     </footer>
     
 </body>

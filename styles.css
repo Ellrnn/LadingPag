@@ -17,9 +17,6 @@ a + a {
   margin-left: 10px;
 }
 
-ul {
-  list-style-type: none;
-}
 
 .header-page {
   padding: 1rem 2rem;
@@ -52,9 +49,6 @@ ul {
   justify-content: space-between;
   background-color: #4598CE;
   gap: 5rem;
-  /* background-image: url('hero.jpg');
-  background-size: 500px 100vw;
-  background-repeat: no-repeat; */
 }
 
 .home > h2 {
@@ -67,16 +61,23 @@ ul {
 }
 
 .services {
-  padding: 96px 24px;
   display: flex;
   align-items: center;
   background-color: rgb(249 250 251);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 96px 12px;
+
 }
 
 .services-container {
   width: 900px;
   padding-bottom: 32px;
-  border-bottom: 1px solid lightgray;
+  
+}
+.services-container p  {
+  margin-bottom: 1rem;
 }
 
 .services-container h3 {
@@ -85,16 +86,14 @@ ul {
 }
 
 .card-container {
-  margin-left: 90px;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
 }
 
 .card {
-  height: 350px;
-  width: 300px;
+  height: 300px;
+  width: 250px;
   padding: 24px;
   border: 1px solid lightgray;
   border-radius: 0.5rem;
@@ -107,35 +106,9 @@ ul {
 }
 
 .card > h4 {
-  font-size: 26px;
+  font-size: 22px;
 }
 
-.price {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.price > span {
-  font-size: 18px;
-  color: lightgray;
-  font-weight: normal;
-}
-
-.join-button{
-  padding: 1rem;
-  border: 0;
-  color: white;
-  border-radius: 0.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: #02126a;
-  cursor: pointer;
-}
-
-.check {
-  color: green;
-  margin-right: 10px;
-}
 
 #faq {
   width: 100%;
@@ -146,12 +119,17 @@ ul {
   justify-items: center;
   gap: 2rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid lightgray;
+  font-size: 16px;
+}
+
+#faq > h3 {
+  font-size: 28px;
 }
 
 .faq{
   width: 700px;
 }
+
 
 .accordion-item {
   margin-top: 2rem;
@@ -167,6 +145,7 @@ ul {
   justify-content: space-between;
   padding: 20px 40px;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 .plus {
@@ -197,11 +176,33 @@ footer {
   color: white;
 }
 
-/* .logo-container-footer {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  font-size: 30px;
+.contacts {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: rgb(249 250 251);
+}
+
+.contacts > h3 {
+  font-size: 28px;
+  margin-bottom: 2rem;
+}
+
+.contacts > p {
+  margin-bottom: 3rem;
+}
+
+.join-button{
+  padding: 1rem;
+  border: 0;
+  color: white;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
   font-weight: bold;
-  color: #02126a;
-} */
+  background-color: #02126a;
+  cursor: pointer;
+  transition: filter 0.2 ease;
+}
+
+.join-button:hover {
+  filter: brightness(0.9);
+}
